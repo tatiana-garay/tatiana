@@ -1,0 +1,55 @@
+#botton{
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid rgb(6, 83, 6);
+    transition: border 500ms, backgraond 2s, border-radius 3s;
+}
+
+#botton:hover{
+    border-radius: 15px;
+    background: orange;
+    border: 5px solid red;
+}
+
+#Caja{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    color: whitesmoke;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 990px;
+    }
+    75%{
+        background-color: red;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+
+    }
+}
